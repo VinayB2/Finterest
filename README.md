@@ -12,7 +12,7 @@ To Use Finterest on Local, follow these steps:
 * Install the required dependencies using npm install.
 * Start the server using npm start.
 ## Usage
-To use Finterest, head over to: [Finterest](https://app-finterest.onrender.com/)
+To use Finterest, head over to: https://app-finterest.onrender.com/
 
 # Credits
 Finterest was created by Vinay B.

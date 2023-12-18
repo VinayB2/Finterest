@@ -1,0 +1,14 @@
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<div class="add-container">
+    <h2>Create New Post</h2>
+    <form action="/createPost" method="post" enctype="multipart/form-data">
+        <input type="file" name="postimage">
+        <input type="text" placeholder="Title" name="title">
+        <textarea type="text" placeholder="Descreption" name="descreption"></textarea>
+        <input class="button" type="submit" value="Create Post">
+    </form>
+</div>
+
+<% include ./partials/footer.ejs %>

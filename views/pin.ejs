@@ -1,0 +1,16 @@
+<% include ./partials/header.ejs %> <% include ./partials/nav.ejs %>
+
+<div class="main-pin-container">
+
+    <div class="main-container">
+        <div class="pin-image">
+            <img src="<%= post?.image %>" alt="pin" />
+        </div>
+        <h3><%= post.title %></h3>
+        <h5><%= post.descreption %></h5>
+        <a href="/deletepost?id=<%= post._id %>">Delete</a>
+    </div>
+
+</div>
+
+<% include ./partials/footer.ejs %>

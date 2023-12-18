@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs %>
+<div>
+    <div class="login-page">
+        <form class="login-form" action="/login" method="post">
+            <h2>Login</h2>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="username" required />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="••••••••••••" name="password" required />
+            </div>
+            <button class="login-btn" type="submit">Login</button>
+            <p>Dont have an account ? <a href="/register">Register</a></p>
+        </form>
+    </div>
+</div>
+<% include ./partials/footer.ejs %>

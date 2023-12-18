@@ -1,0 +1,41 @@
+.main-pin-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+    padding: 100px 0;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.main-pin-container .pin-image {
+    width: 80vw;
+}
+
+.main-pin-container .pin-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.main-pin-container h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0 2px 0;
+}
+
+.main-pin-container h5 {
+    padding: 5px 0px 10px 0;
+    margin-bottom: 10px;
+}
+
+.main-container a {
+    color: white;
+    text-decoration: none;
+    background-color: crimson;
+    font-size: 18px;
+    padding: 8px 13px;
+    border-radius: 15px;
+}

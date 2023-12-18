@@ -1,0 +1,41 @@
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+<div class="container">
+    <form id="upload-form" hidden action="/fileupload" method="post" enctype="multipart/form-data">
+        <input type="file" accept="image/*" name="image">
+    </form>
+    <div class="main">
+        <div class="profile-main">
+            <span id="upload-icon" class="edit-icon">
+                <i class="ri-pencil-fill"></i>
+            </span>
+            <div class="profile-image">
+                <img src="<%= user.profileImage %>" alt="profile">
+            </div>
+        </div>
+        <h1><%= user.username %></h1>
+        <h3>@<%= user.username %></h3>
+        <a href="#" class="edit-link">Edit</a>
+        <a class="button" href="/add">Add New Pin</a>
+    </div>
+    <div class="pin-container">
+        <div class="pin">
+            <div class="pin-image">
+                <img src="<%= user?.posts[0]?.image %>" alt="pin">
+            </div>
+            <a href="/posts">Your Uploaded Pins</a>
+            <h5><%= user.posts.length %> pins</h5>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector("#upload-icon").addEventListener("click", () => {
+       document.querySelector("#upload-form input").click();
+    });
+    document.querySelector("#upload-form input").addEventListener("change", () => {
+        document.querySelector("#upload-form").submit();
+    })
+</script>
+
+<% include ./partials/footer.ejs %>

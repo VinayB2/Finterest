@@ -1,0 +1,35 @@
+<% include ./partials/header.ejs %>
+<div>
+    <div class="register-page">
+        <form class="register-form" action="/register" method="post">
+            <h2>Register</h2>
+            <div class="item-box">
+                <label for="name">Name</label>
+                <input type="text" placeholder="name" name="username" required />
+            </div>
+            <div class="item-box">
+                <label for="email">Email</label>
+                <input type="email" placeholder="yourmail@gmail.com" name="email" required />
+            </div>
+            <div class="item-box">
+                <label for="Phone No">Phone Number</label>
+                <input
+                    type="tel"
+                    placeholder="phone number"
+                    maxLength="10"
+                    pattern="[1-9]{1}[0-9]{9}"
+                    name="phone"
+                    required
+                />
+            </div>
+
+            <div class="item-box">
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" name="password" required />
+            </div>
+            <button class="register-btn" type="submit">Register</button>
+            <p>Already have an account ? <a href="/login">Login</a></p>
+        </form>
+    </div>
+</div>
+<% include ./partials/footer.ejs %>

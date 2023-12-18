@@ -1,0 +1,44 @@
+.nav {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: white;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 10px;
+    height: 30px;
+}
+
+.logo-name {
+    text-decoration: none;
+    color: white;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.right .button {
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    background-color: crimson;
+    border-radius: 20px;
+    margin-left: 10px;
+}

@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %> <% include ./partials/nav.ejs %>
+
+<div class="pin-container">
+    <% user.posts.forEach((post) => { %>
+
+    <div class="pin">
+        <div class="pin-image">
+            <img src="<%= post?.image %>" alt="pin" />
+        </div>
+        <h3><a href="/view?id=<%= post._id %>"" ><%= post.title %></a></h3>
+        <h5><%= post.descreption %></h5>
+    </div>
+
+    <% }) %>
+</div>
+
+<% include ./partials/footer.ejs %>

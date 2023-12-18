@@ -1,0 +1,42 @@
+.add-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(44, 44, 44);
+    padding: 10px 20px;
+    color: white;
+    padding-top: 50px;
+}
+
+.add-container h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.add-container form>* {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    background: none;
+    outline: none;
+    border: 2px solid crimson;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s ease all;
+}
+
+.add-container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-container form .button {
+    cursor: pointer;
+    background-color: crimson;
+}
+
+.add-container form .button:hover {
+    letter-spacing: 1px;
+}
